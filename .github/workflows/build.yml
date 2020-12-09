@@ -33,14 +33,14 @@ jobs:
           Get-ChildItem -Path $env:GITHUB_WORKSPACE -Recurse
         shell: pwsh
 
-      - run: $env:GITHUB_WORKSPACE\vcpkg\buildtrees\lua\x64-mingw-dynamic-rel\lua.exe -v
+      - run: "$env:GITHUB_WORKSPACE\vcpkg\buildtrees\lua\x64-mingw-dynamic-rel\lua.exe -v"
         shell: pwsh
         if: always()
 
-      - run: $env:GITHUB_WORKSPACE\vcpkg\installed\x64-mingw-dynamic\tools\lua\lua.exe -v
+      - run: "$env:GITHUB_WORKSPACE\vcpkg\installed\x64-mingw-dynamic\tools\lua\lua.exe -v"
         shell: pwsh
         if: always()
 
-      - run: $env:GITHUB_WORKSPACE\vcpkg\packages\lua_x64-mingw-dynamic\tools\lua\lua.exe -v
+      - run: "$env:GITHUB_WORKSPACE\vcpkg\packages\lua_x64-mingw-dynamic\tools\lua\lua.exe -v"
         shell: pwsh
         if: always()
