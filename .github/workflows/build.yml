@@ -1,6 +1,6 @@
 name: sample build
 on:
-  push
+  push:
   pull_request:
   workflow_dispatch:
 
