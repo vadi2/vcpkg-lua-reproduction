@@ -1,3 +1,9 @@
+name: sample build
+on:
+  push
+  pull_request:
+  workflow_dispatch:
+
 jobs:
   compile-mudlet:
     name: sample build
